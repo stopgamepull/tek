@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonk Fight Club | Fight for Money</title>
+    <title>Cash Clan Server | United clans, endless battles</title>
     <link rel="shortcut icon" href="images/fav.png" type="image/png">
     <link rel="stylesheet" href="css/all.min.css">
     <style>
@@ -35,7 +35,7 @@
             src: url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
         }
         
-        /* Fighting Arena Background */
+        /* COCSing Arena Background */
         .arena-bg {
             position: fixed;
             top: 0;
@@ -44,7 +44,7 @@
             height: 100%;
             z-index: -1;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.hdqwalls.com/wallpapers/F1GHTER-7-4k-2020-3t.jpg');
+                        url('https://images.hdqwalls.com/wallpapers/COCS-7-4k-2020-3t.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -615,26 +615,26 @@
             color: rgba(255, 255, 255, 0.5);
         }
         
-        .F1GHTER-logo {
+        .COCS-logo {
             width: 300px;
             margin-bottom: 2rem;
             filter: drop-shadow(0 0 10px rgba(229, 9, 20, 0.7));
         }
         
-        /* Fight Animation */
-        .fight-animation {
+        /* COCS Animation */
+        .COCS-animation {
             position: absolute;
             font-size: 5rem;
             font-weight: bold;
             color: var(--accent);
             text-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
             opacity: 0;
-            animation: fightAnimation 1.5s ease-out;
+            animation: COCSAnimation 1.5s ease-out;
             z-index: 100;
             pointer-events: none;
         }
         
-        @keyframes fightAnimation {
+        @keyframes COCSAnimation {
             0% { transform: scale(0.5); opacity: 0; }
             20% { transform: scale(1.2); opacity: 1; }
             80% { transform: scale(1); opacity: 1; }
@@ -730,7 +730,7 @@
             margin-bottom: 2rem;
         }
         
-        /* Fight Result Modal */
+        /* COCS Result Modal */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -791,17 +791,17 @@
             font-weight: bold;
         }
         
-        .fighters {
+        .COCSers {
             display: flex;
             justify-content: space-around;
             margin: 2rem 0;
         }
         
-        .fighter {
+        .COCSer {
             text-align: center;
         }
         
-        .fighter-image {
+        .COCSer-image {
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -831,13 +831,13 @@
     </div>
 
     <div class="fullscreen-loader" id="fullscreenLoader">
-        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/F1GHTER_7_logo.svg/1200px-F1GHTER_7_logo.svg.png" class="F1GHTER-logo"> -->
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/COCS_7_logo.svg/1200px-COCS_7_logo.svg.png" class="COCS-logo"> -->
         <div class="loading-content" id="loadingContent" style="display: none; text-align: center;align-items: center;flex-direction: column;">
             <div class="loading-spinner"></div>
             <div class="loading-progress">
                 <div class="progress-bar"></div>
             </div>
-            <h2 class="loading-text">Connecting to F1GHTEROnline...</h2>
+            <h2 class="loading-text">Connecting to COCSOnline...</h2>
             <div class="loading-details">
                 <div id="loading-step">Finding opponent...</div>
                 <div id="loading-percentage">0%</div>
@@ -849,14 +849,14 @@
         <div class="modal-content">
             <button class="modal-close" id="closeModal">�</button>
             <h2 class="modal-title" id="resultTitle">Victory!</h2>
-            <div class="fighters">
-                <div class="fighter">
-                    <div class="fighter-image" id="playerFighter" style="background-image: url('https://www.fightersgeneration.com/nf7/char/kazuya-mishima-F1GHTER7-render.png');"></div>
+            <div class="COCSers">
+                <div class="COCSer">
+                    <div class="COCSer-image" id="playerCOCSer" style="background-image: url('https://www.COCSersgeneration.com/nf7/char/kazuya-mishima-COCS7-render.png');"></div>
                     <h3 id="playerName">You</h3>
                 </div>
                 <div class="vs">VS</div>
-                <div class="fighter">
-                    <div class="fighter-image" id="opponentFighter" style="background-image: url('https://www.fightersgeneration.com/nf7/char/heihachi-mishima-F1GHTER7-render.png');"></div>
+                <div class="COCSer">
+                    <div class="COCSer-image" id="opponentCOCSer" style="background-image: url('https://www.COCSersgeneration.com/nf7/char/heihachi-mishima-COCS7-render.png');"></div>
                     <h3 id="opponentName">Opponent</h3>
                 </div>
             </div>
@@ -869,7 +869,7 @@
     <!-- Server Card -->
     <div class="server-card">
         <div class="server-header">
-            <h1 class="server-title">Bonk Fight Club </h1>
+            <h1 class="server-title">Cash Clan Server </h1>
             <div class="server-status">
                 <div class="online-dot"></div>
                 <span class="online-count">Online: 3/500</span>
@@ -887,11 +887,11 @@
             </div>
             <div class="info-item">
                 <div class="info-label">MIN BET</div>
-                <div class="info-value">5.00 $FIGHT</div>
+                <div class="info-value">5.00 $COCS</div>
             </div>
             <div class="info-item">
                 <div class="info-label">MAX BET</div>
-                <div class="info-value">10000.00 $FIGHT</div>
+                <div class="info-value">10000.00 $COCS</div>
             </div>
         </div>
         
@@ -901,13 +901,13 @@
         
         <div class="server-footer">
             <div class="social-links">
-                <a href="https://x.com/bonkfightclub" target="_blank"><i class="fab fa-twitter"></i> @bonkfightclub</a>
-                <a href="https://discord.gg/F1GHTER" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                <a href="https://x.com/bonkCOCSclub" target="_blank"><i class="fab fa-twitter"></i> @bonkCOCSclub</a>
+                <a href="https://discord.gg/COCS" target="_blank"><i class="fab fa-discord"></i> Discord</a>
                 <p>CA: BkxgvxLvnT8isfTLqC72wdY1zRHEExLBusDYfYoXbonk</p>
             </div>
             <div class="ca-token">
                 <span style="background: rgba(255, 255, 255, 0.1); padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.8rem;">
-                    <i class="fas fa-wallet"></i> Balance: 0 $FIGHT
+                    <i class="fas fa-wallet"></i> Balance: 0 $COCS
                 </span>
             </div>
         </div>
@@ -917,7 +917,7 @@
     <div class="menu-container">
         <div class="menu-tabs">
             <button class="tab-btn active" data-tab="home">Home</button>
-            <button class="tab-btn" data-tab="fight">Fight</button>
+            <button class="tab-btn" data-tab="COCS">COCS</button>
             <button class="tab-btn" data-tab="leaderboard">Leaderboard</button>
             <button class="tab-btn" data-tab="shop">Shop</button>
             <button class="tab-btn" data-tab="settings">Settings</button>
@@ -930,7 +930,7 @@
                     <div class="feature-icon">
                         <i class="fas fa-fist-raised"></i>
                     </div>
-                    <h3>Real Money Fights</h3>
+                    <h3>Real Money COCSs</h3>
                     <p>Challenge players worldwide and win real cash prizes in intense 1v1 battles.</p>
                 </div>
                 <div class="feature-card">
@@ -949,19 +949,19 @@
                 </div>
             </div>
             
-            <button id="quick-fight-btn" class="btn btn-accent btn-large" style="margin: 2rem auto; display: block;">
-                <i class="fas fa-bolt"></i> Launch F1GHTER
+            <button id="quick-COCS-btn" class="btn btn-accent btn-large" style="margin: 2rem auto; display: block;">
+                <i class="fas fa-bolt"></i> Launch COCS
             </button>
             
             <div style="background: rgba(229, 9, 20, 0.2); padding: 1rem; border-radius: 5px; border-left: 3px solid var(--accent);">
                 <h3 style="color: var(--accent); margin-bottom: 0.5rem;"><i class="fas fa-exclamation-triangle"></i> Tournament Announcement</h3>
-                <p>The weekly King of Iron Fist Tournament starts in 2 hours! 2000 $FIGHT prize pool. <a href="#" style="color: var(--accent);">Click here to register</a>.</p>
+                <p>The weekly King of Iron Fist Tournament starts in 2 hours! 2000 $COCS prize pool. <a href="#" style="color: var(--accent);">Click here to register</a>.</p>
             </div>
         </div>
 
-        <!-- Fight Tab -->
-        <div id="fight" class="tab-content">
-            <h2 class="text-accent text-center mb-2">SELECT YOUR FIGHTER</h2>
+        <!-- COCS Tab -->
+        <div id="COCS" class="tab-content">
+            <h2 class="text-accent text-center mb-2">SELECT YOUR COCSER</h2>
             
             <div class="character-select">
                 <div class="character-card" data-character="kazuya">
@@ -992,7 +992,7 @@
             
             <div class="betting-section">
                 <h3 class="text-accent"><i class="fas fa-coins"></i> PLACE YOUR BET</h3>
-                <p>Minimum bet: 5.00 $FIGHT| Maximum bet: 500.00 $FIGHT</p>
+                <p>Minimum bet: 5.00 $COCS| Maximum bet: 500.00 $COCS</p>
                 
                 <div class="bet-amount">
                     <input type="number" class="bet-input" id="betAmount" placeholder="Enter amount ($)" min="5" max="500" value="10">
@@ -1000,20 +1000,20 @@
                 </div>
                 
                 <div class="bet-quick">
-                    <button class="bet-btn" data-amount="5">5 $FIGHT</button>
-                    <button class="bet-btn" data-amount="10">10 $FIGHT</button>
-                    <button class="bet-btn" data-amount="25">25 $FIGHT</button>
-                    <button class="bet-btn" data-amount="50">50 $FIGHT</button>
-                    <button class="bet-btn" data-amount="100">100 $FIGHT</button>
+                    <button class="bet-btn" data-amount="5">5 $COCS</button>
+                    <button class="bet-btn" data-amount="10">10 $COCS</button>
+                    <button class="bet-btn" data-amount="25">25 $COCS</button>
+                    <button class="bet-btn" data-amount="50">50 $COCS</button>
+                    <button class="bet-btn" data-amount="100">100 $COCS</button>
                 </div>
             </div>
             
-            <button id="start-fight-btn" class="btn btn-accent btn-large" style="margin: 1rem auto; display: block;">
-                <i class="fas fa-fist-raised"></i> START FIGHT
+            <button id="start-COCS-btn" class="btn btn-accent btn-large" style="margin: 1rem auto; display: block;">
+                <i class="fas fa-fist-raised"></i> START COCS
             </button>
             
             <div style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 5px; border-left: 3px solid var(--accent);">
-                <h3 style="color: var(--accent); margin-bottom: 0.5rem;"><i class="fas fa-info-circle"></i> Fight Rules</h3>
+                <h3 style="color: var(--accent); margin-bottom: 0.5rem;"><i class="fas fa-info-circle"></i> COCS Rules</h3>
                 <ul style="padding-left: 1.5rem; line-height: 1.6;">
                     <li>Best of 3 rounds</li>
                     <li>60 second time limit</li>
@@ -1025,7 +1025,7 @@
         
         <!-- Leaderboard Tab -->
         <div id="leaderboard" class="tab-content">
-            <h2 class="text-accent text-center mb-2">TOP FIGHTERS</h2>
+            <h2 class="text-accent text-center mb-2">TOP COCSERS</h2>
             
             <div class="leaderboard">
                 <div class="leaderboard-header">
@@ -1042,7 +1042,7 @@
                         <span>KillerKazuya</span>
                     </div>
                     <div class="wins">127</div>
-                    <div>5,430 $FIGHT</div>
+                    <div>5,430 $COCS</div>
                 </div>
                 
                 <div class="leaderboard-row">
@@ -1052,7 +1052,7 @@
                         <span>MishimaStyle</span>
                     </div>
                     <div class="wins">98</div>
-                    <div>4,215 $FIGHT</div>
+                    <div>4,215 $COCS</div>
                 </div>
                 
                 <div class="leaderboard-row">
@@ -1062,7 +1062,7 @@
                         <span>ShadowBlade</span>
                     </div>
                     <div class="wins">87</div>
-                    <div>3,780 $FIGHT</div>
+                    <div>3,780 $COCS</div>
                 </div>
                 
                 <div class="leaderboard-row">
@@ -1072,7 +1072,7 @@
                         <span>AztecLord</span>
                     </div>
                     <div class="wins">79</div>
-                    <div>3,530 $FIGHT</div>
+                    <div>3,530 $COCS</div>
                 </div>
               
             </div>
@@ -1084,7 +1084,7 @@
         
         <!-- Shop Tab -->
         <div id="shop" class="tab-content">
-            <h2 class="text-accent text-center mb-2">F1GHTER STORE</h2>
+            <h2 class="text-accent text-center mb-2">COCS STORE</h2>
             
             <h3 class="text-accent" style="margin: 1.5rem 0 1rem;"><i class="fas fa-user"></i> Characters</h3>
             <div class="shop-items">
@@ -1094,7 +1094,7 @@
                     <div class="item-details">
                         <h4>Akuma</h4>
                         <div class="item-price">
-                            <span>9.99 $FIGHT</span>
+                            <span>9.99 $COCS</span>
                         </div>
                         <button class="buy-btn">Purchase</button>
                     </div>
@@ -1104,7 +1104,7 @@
                     <div class="item-details">
                         <h4>Geese Howard</h4>
                         <div class="item-price">
-                            <span>7.99 $FIGHT</span>
+                            <span>7.99 $COCS</span>
                         </div>
                         <button class="buy-btn">Purchase</button>
                     </div>
@@ -1114,7 +1114,7 @@
                     <div class="item-details">
                         <h4>Marshall Law</h4>
                         <div class="item-price">
-                            <span>8.99 $FIGHT</span>
+                            <span>8.99 $COCS</span>
                         </div>
                         <button class="buy-btn">Purchase</button>
                     </div>
@@ -1131,7 +1131,7 @@
                     </div>
                     <div class="item-details">
                         <h4>Starter Pack</h4>
-                        <div class="item-price">500 $FIGHT</div>
+                        <div class="item-price">500 $COCS</div>
                         <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
@@ -1141,7 +1141,7 @@
                     </div>
                     <div class="item-details">
                         <h4>Advanced Pack</h4>
-                        <div class="item-price">1,200 $FIGHT</div>
+                        <div class="item-price">1,200 $COCS</div>
                         <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
@@ -1152,7 +1152,7 @@
                     </div>
                     <div class="item-details">
                         <h4>Pro Pack</h4>
-                        <div class="item-price">3,000 $FIGHT</div>
+                        <div class="item-price">3,000 $COCS</div>
                         <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
@@ -1162,14 +1162,14 @@
                     </div>
                     <div class="item-details">
                         <h4>Mega Pack</h4>
-                        <div class="item-price">8,000 $FIGHT</div>
+                        <div class="item-price">8,000 $COCS</div>
                         <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
             </div>
             
             <div style="margin-top: 2rem; background: rgba(229, 9, 20, 0.2); padding: 1rem; border-radius: 5px; border-left: 3px solid var(--accent);">
-                <h3 style="margin-bottom: 0.5rem; color: var(--accent);"><i class="fas fa-wallet"></i> Your Balance: 0 $FIGHT</h3>
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent);"><i class="fas fa-wallet"></i> Your Balance: 0 $COCS</h3>
                 <button class="btn btn-accent">
                     <i class="fas fa-plus-circle"></i> Add Funds
                 </button>
@@ -1334,7 +1334,7 @@
             document.getElementById('betAmount').value = '500';
         });
         
-        // Fight start functionality
+        // COCS start functionality
         function startLoading() {
             const fullscreenLoader = document.getElementById('fullscreenLoader');
             const loadingContent = document.getElementById('loadingContent');
@@ -1356,8 +1356,8 @@
                     "Establishing connection...",
                     "Synchronizing game state...",
                     "Loading arena...",
-                    "Preparing fighters...",
-                    "Almost ready to fight..."
+                    "Preparing COCSers...",
+                    "Almost ready to COCS..."
                 ];
                 
                 let currentStep = 0;
@@ -1370,16 +1370,16 @@
                     loadingPercentage.textContent = `${percent}%`;
                 }, 2000);
                 
-                // After 6 seconds, show fight result
+                // After 6 seconds, show COCS result
                 setTimeout(() => {
                     clearInterval(loadingInterval);
-                    showFightResult();
+                    showCOCSResult();
                 }, 6000);
             }, 1000);
         }
         
-        // Show fight result
-        function showFightResult() {
+        // Show COCS result
+        function showCOCSResult() {
             const fullscreenLoader = document.getElementById('fullscreenLoader');
             fullscreenLoader.classList.remove('active');
             
@@ -1387,9 +1387,9 @@
             const resultTitle = document.getElementById('resultTitle');
             const resultText = document.getElementById('resultText');
             const prizeAmount = document.getElementById('prizeAmount');
-            const playerFighter = document.getElementById('playerFighter');
+            const playerCOCSer = document.getElementById('playerCOCSer');
             const playerName = document.getElementById('playerName');
-            const opponentFighter = document.getElementById('opponentFighter');
+            const opponentCOCSer = document.getElementById('opponentCOCSer');
             const opponentName = document.getElementById('opponentName');
             
             // Get selected character
@@ -1400,9 +1400,9 @@
             const randomOpponent = possibleOpponents[Math.floor(Math.random() * possibleOpponents.length)];
             
             // Set player and opponent info
-            playerFighter.style.backgroundImage = `url('${selectedChar.image}')`;
+            playerCOCSer.style.backgroundImage = `url('${selectedChar.image}')`;
             playerName.textContent = selectedChar.name;
-            opponentFighter.style.backgroundImage = `url('${randomOpponent.image}')`;
+            opponentCOCSer.style.backgroundImage = `url('${randomOpponent.image}')`;
             opponentName.textContent = randomOpponent.name;
             
             // Random outcome (70% chance to win)
@@ -1414,14 +1414,14 @@
                 resultTitle.textContent = "VICTORY!";
                 resultText.textContent = `${selectedChar.name} defeated ${randomOpponent.name} in an epic battle!`;
                 prizeAmount.textContent = `+$${prize.toFixed(2)}`;
-                playerFighter.classList.add('winner');
-                opponentFighter.classList.remove('winner');
+                playerCOCSer.classList.add('winner');
+                opponentCOCSer.classList.remove('winner');
             } else {
                 resultTitle.textContent = "DEFEAT";
                 resultText.textContent = `${selectedChar.name} was defeated by ${randomOpponent.name}!`;
                 prizeAmount.textContent = `-$${betAmount.toFixed(2)}`;
-                opponentFighter.classList.add('winner');
-                playerFighter.classList.remove('winner');
+                opponentCOCSer.classList.add('winner');
+                playerCOCSer.classList.remove('winner');
             }
             
             resultModal.classList.add('active');
@@ -1430,39 +1430,39 @@
         // Close modal
         document.getElementById('closeModal').addEventListener('click', function() {
             document.getElementById('resultModal').classList.remove('active');
-            document.getElementById('playerFighter').classList.remove('winner');
-            document.getElementById('opponentFighter').classList.remove('winner');
+            document.getElementById('playerCOCSer').classList.remove('winner');
+            document.getElementById('opponentCOCSer').classList.remove('winner');
         });
         
         document.getElementById('continueBtn').addEventListener('click', function() {
             document.getElementById('resultModal').classList.remove('active');
-            document.getElementById('playerFighter').classList.remove('winner');
-            document.getElementById('opponentFighter').classList.remove('winner');
+            document.getElementById('playerCOCSer').classList.remove('winner');
+            document.getElementById('opponentCOCSer').classList.remove('winner');
         });
         
-        // Start fight buttons
-        document.getElementById('quick-fight-btn').addEventListener('click', startLoading);
-        document.getElementById('start-fight-btn').addEventListener('click', function() {
+        // Start COCS buttons
+        document.getElementById('quick-COCS-btn').addEventListener('click', startLoading);
+        document.getElementById('start-COCS-btn').addEventListener('click', function() {
             if (!selectedCharacter) {
-                alert("Please select a fighter first!");
+                alert("Please select a COCSer first!");
                 return;
             }
             startLoading();
         });
         
-        // Create fight animation on click
+        // Create COCS animation on click
         document.addEventListener('click', function(e) {
             if (e.target.classList.contains('btn') || e.target.classList.contains('character-card')) {
-                const fightText = document.createElement('div');
-                fightText.className = 'fight-animation';
-                fightText.textContent = 'FIGHT!';
-                fightText.style.left = `50%`;
-                fightText.style.top = `50%`;
-                fightText.style.transform = `translate(-50%, -50%)`;
-                document.body.appendChild(fightText);
+                const COCSText = document.createElement('div');
+                COCSText.className = 'COCS-animation';
+                COCSText.textContent = 'COCS!';
+                COCSText.style.left = `50%`;
+                COCSText.style.top = `50%`;
+                COCSText.style.transform = `translate(-50%, -50%)`;
+                document.body.appendChild(COCSText);
                 
                 setTimeout(() => {
-                    fightText.remove();
+                    COCSText.remove();
                 }, 1500);
             }
         });
